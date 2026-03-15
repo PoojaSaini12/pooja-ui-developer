@@ -636,6 +636,23 @@ section h2{
   margin-bottom: 50px;
 }
 
+.portfolio-caption {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  margin-top: 2px;
+  flex-direction: column;
+}
+
+.portfolio-caption p{
+  margin: 0;
+  padding: 0;
+}
+
+.portfolio-caption a{
+  
+}
+
 .company-project:last-child   .portfolio-gallery{
   margin-bottom: 0;
 }
