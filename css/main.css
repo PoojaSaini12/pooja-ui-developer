@@ -505,11 +505,12 @@ section h2{
 
 #portfolio .folio-item {
   position: relative;
-  border: solid 1px #f1f1f1;
-  padding: 5px;
+  padding: 0;
   background: var(--white);
-  border-radius: 6px;
   min-height: 147px;
+  -webkit-box-shadow: 2px 2px 5px 0px #C3C3C3;
+  box-shadow: 2px 2px 5px 0px #C3C3C3;
+  border-radius: 6px;
 }
 
 #portfolio .overlay {
@@ -578,17 +579,16 @@ section h2{
   }
 
 .folio-image, .folio-overview .folio-expand {
-  -webkit-transition: all 0.8s ease-in-out;
-  transition: all 0.8s ease-in-out;
+
 }
 
 #portfolio .folio-item:hover .folio-image {
-  -webkit-transform: scale(0.8) rotate(9deg);
-  transform: scale(0.8) rotate(9deg);
+  border-radius: 6px;
 }
 
 .folio-image img {
   width: 100%;
+  border-radius: 6px;
 }
 
 .company-project .project-head span{
@@ -621,7 +621,7 @@ section h2{
 }
 
 #portfolio .folio-item:hover .overlay .folio-info h3{
-  font-size: 16px;
+  font-size: 14px;
   font-weight: 500;
 }
 
@@ -634,6 +634,9 @@ section h2{
 .portfolio-gallery{
   margin-top: 30px;
   margin-bottom: 50px;
+  justify-content: center;
+  display: flex;
+  flex-wrap: wrap;
 }
 
 .portfolio-caption {
